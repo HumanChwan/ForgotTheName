@@ -34,6 +34,7 @@ let letReachFinal = false;
 let toMove = true; //1 : Player; 0 : computer
 
 let toPos = 360;
+let toPosPrev = 360;
 
 let inPlay = true;
 
@@ -166,6 +167,9 @@ function Loop() {
 				deltaX *= -1;
 				slope *= -1;
 				toMove ^= 1;
+				toPos ^= toPosPrev;
+				toPosPrev ^= toPos;
+				toPos ^= toPosPrev;
 				update();
 			} else {
 				letReachFinal = true;
