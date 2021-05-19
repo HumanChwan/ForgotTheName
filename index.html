@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Forgot The Name :/</title>
+</head>
+<body>
+    <div class="container">
+        <div class="score-board">
+            <p class="display">LeaderBoard</p>
+            <table id="leaderBoard-table">
+                <tr>
+                    <th style="font-weight: bold;">Name</th>
+                    <th style="font-weight: bold;">Score</th>
+                    <th style="font-weight: bold;">On</th>
+                </tr>
+            </table>
+        </div>
+        <div class="main" id="main">
+            <div class="none" id="F">F</div>
+            <div class="none" id="lost">You Lost! Press any key to retry!</div>
+            <div class="obj player push-blocks" id="player"></div>
+            <div class="obj ball" id="ball"></div>
+            <div class="obj computer push-blocks" id="computer"></div>
+        </div>
+        <div class="board">
+            <div class="display" id="score">Score: 0</div>
+            <div class="display" id="multiplier">Multiplier: x1</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+html {
+    background-color: #222;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    border: 2px solid blue;
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.obj {
+    position: absolute;
+}
+
+.none {
+    display: none;
+}
+
+.increase-font {
+    font-family: sans-serif;
+    position: absolute;
+    transform: translate(350px, 300px);
+    color: antiquewhite;
+    margin: 0 auto;
+    animation-duration: 2s;
+    animation-name: FontInc;
+    z-index: 10;
+    font-size: 200px;
+}
+
+@keyframes FontInc {
+    from {
+        transform: translate(400px, 400px);
+        font-size: 0px;
+    }
+    to {
+        transform: translate(350px, 300px);
+        font-size: 200px;
+    }
+}
+
+.appear {
+    font-family: sans-serif;
+    position: absolute;
+    transform: translate(275px, 500px);
+    color: antiquewhite;
+    margin: 0 auto;
+    animation-duration: 3s;
+    animation-name: prompt;
+    z-index: 10;
+    font-size: 20px;
+}
+
+@keyframes prompt {
+    from {
+        transform: translate(400px, 500px);
+        font-size: 0px;
+    }
+    66% {
+        transform: translate(400px, 500px);
+        font-size: 0px;
+    }
+    to {
+        transform: translate(275px, 500px);
+        font-size: 20px;
+    }
+}
+
+.push-blocks {
+    width: 20px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.player {
+    transform: translate(20px, 360px);
+}
+
+.computer {
+    transform: translate(760px, 360px);
+}
+
+.ball {
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(390px, 390px);
+}
+
+.display {
+    color: antiquewhite;
+    font-size: 34px;
+}
+
+.score-board {
+    width: 180px;
+    align-self: flex-start; 
+}
+
+#leaderBoard-table {
+    margin: 0 0 0 0;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+    font-size: 16px;
+    
+}
+td, th {
+    border: 1px solid antiquewhite;
+    min-width: 80px;
+    text-align: center;
+}
