@@ -4,7 +4,7 @@ html {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -97,7 +97,9 @@ html {
     border-radius: 50%;
     transform: translate(390px, 390px);
 }
-
+.board {
+    align-self: flex-start;
+}
 .display {
     color: antiquewhite;
     font-size: 34px;
