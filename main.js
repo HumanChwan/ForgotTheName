@@ -104,12 +104,12 @@ document.addEventListener('keypress', () => {
 	let dateReadable = legibleDate(latest.RecordMadeOn);
 	leaderBoard.innerHTML += `<tr> <td>${latest.Name}</td> <td>${latest.Score}</td> <td>${dateReadable}</td> </tr>`;
 	inPlay = true;
-	InitBallXY();
 	F.className = 'none';
 	lost.className = 'none';
 	blockOne.style.transform = `translate(20px, 360px)`;
 	blockTwo.style.transform = `translate(760px, 360px)`;
 	unitSpeed = 3.5;
+	InitBallXY();
 	Score = 0;
 	score.innerText = `Score: ${Score}`;
 	Multiplier = 1;
